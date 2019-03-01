@@ -24,5 +24,6 @@ namespace MotorTributarioNet.Impostos
     {
         decimal BaseCalculo { get; }
         decimal Valor { get; }
+        decimal Percentual { get; }
     }
 }

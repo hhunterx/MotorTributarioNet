@@ -22,13 +22,15 @@ namespace MotorTributarioNet.Impostos.Implementacoes
 {
     public class ResultadoCalculoFcp : IResultadoCalculoFcp
     {
-        public ResultadoCalculoFcp(decimal baseCalculo, decimal fcp)
+        public ResultadoCalculoFcp(decimal baseCalculo, decimal fcp, decimal percentual)
         {
             BaseCalculo = baseCalculo;
             Valor = fcp;
+            Percentual = percentual;
         }
 
         public decimal BaseCalculo { get; }
         public decimal Valor { get; }
+        public decimal Percentual { get; }
     }
 }

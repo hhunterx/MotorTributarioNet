@@ -84,7 +84,7 @@ namespace MotorTributarioNet.Impostos
         public decimal ValorIcmsDestino { get; private set; }
 
         public decimal ValorIss { get; private set; }
-        public decimal BaseCalculoIss { get; private set; }
+        public decimal ValorBcIss { get; private set; }
         public decimal PercentualIss { get; private set; }
         public decimal BaseCalculoInss { get; private set; }
         public decimal BaseCalculoIrrf { get; private set; }
@@ -129,6 +129,10 @@ namespace MotorTributarioNet.Impostos
             CalcularIbpt();
             return this;
         }
+
+        public CstBase TipoCst => Icms;
+
+        public CsosnBase TipoCsosn => CsosnBase;
 
         private void CalcularIcms()
         {

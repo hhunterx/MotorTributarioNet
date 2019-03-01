@@ -35,13 +35,13 @@ namespace MotorTributarioNet.Util
 
         public static T GetValue<T>(this Enum enumeration)
         {
-            T result = default(T);
+            T result = default;
 
             try
             {
                 result = (T)Convert.ChangeType(enumeration, typeof(T));
             }
-            catch (Exception ex)
+            catch
             {
               
             }

@@ -48,7 +48,7 @@ namespace MotorTributarioNet.Impostos.Tributacoes
 
             var valorIcmsSt = (baseCalculoIcmsSt * (_tributavel.PercentualFcpSt / 100));
 
-            return new ResultadoCalculoFcpSt(baseCalculoIcmsSt, valorIcmsSt);
+            return new ResultadoCalculoFcpSt(baseCalculoIcmsSt, valorIcmsSt, _tributavel.PercentualFcpSt);
         }
     }
 }

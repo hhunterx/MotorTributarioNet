@@ -24,5 +24,7 @@ namespace MotorTributarioNet.Impostos
     {
         decimal BaseCalculoFcpSt { get; }
         decimal ValorFcpSt { get; }
+        decimal PercentualFcpSt { get; }
+
     }
 }

@@ -47,7 +47,7 @@ namespace MotorTributarioNet.Impostos.Tributacoes
 
             var fcp = baseCalculo * (_tributavel.PercentualFcp / 100);
 
-            return new ResultadoCalculoFcp(baseCalculo, fcp);
+            return new ResultadoCalculoFcp(baseCalculo, fcp, _tributavel.PercentualFcp);
         }
     }
 }
